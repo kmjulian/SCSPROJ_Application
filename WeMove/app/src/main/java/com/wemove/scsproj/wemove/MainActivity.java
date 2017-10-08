@@ -1,6 +1,7 @@
 package com.wemove.scsproj.wemove;
 
 import android.content.Intent;
+import android.icu.util.Calendar;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,13 +20,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        buttonMain = (Button) findViewById(R.id.buttonMain);
+
 
         buttonMain.setOnClickListener(new View.OnClickListener() {
-                                          @Override
-                                          public void onClick(View v) {
-                                              Intent intent = new Intent(MainActivity.this, MainSearch.class);
-                                              startActivity(intent);
-                                          }
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
+                startActivity(intent);
+        }
                                       });
         TextView textViewRegisterUser;
 
