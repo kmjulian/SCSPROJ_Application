@@ -2,13 +2,18 @@ package com.wemove.scsproj.wemove;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -27,7 +32,7 @@ public class CalendarActivity extends AppCompatActivity {
     private Button btntoTime;
 
 
-    @Overrid
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
@@ -43,25 +48,48 @@ public class CalendarActivity extends AppCompatActivity {
 
             }
         });
-90
+
         btntoTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateTime();
+                AlertDialog.Builder mBuilder = new AlertDialog.Builder(CalendarActivity.this);
+                View mView = getLayoutInflater().inflate(R.layout.spinner_time, null);
+                mBuilder.setTitle("Select time");
+                final Spinner mSpinner = (Spinner) mView.findViewById(R.id.spinner);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(CalendarActivity.this,
+                        android.R.layout.simple_spinner_item,
+                        getResources().getStringArray(R.array.selectTime));
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                mSpinner.setAdapter(adapter);
 
+                mBuilder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                if (!mSpinner.getSelectedItem().toString().equalsIgnoreCase("Choose a time...")) {
+                                    Toast.makeText(CalendarActivity.this,
+                                            mSpinner.getSelectedItem().toString(),
+                                            Toast.LENGTH_SHORT)
+                                            .show();
+                                }
+                            }
+                        });
+                mBuilder.setNegativeButton("Dismiss", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                mBuilder.setView(mView);
+                AlertDialog dialog = mBuilder.create();
+                dialog.show();
             }
         });
-
-
         updateTextLabel();
     }
 
     private void updateDate() {
         new DatePickerDialog(this, d, dateTime.get(Calendar.YEAR),dateTime.get(Calendar.MONTH),dateTime.get(Calendar.DAY_OF_MONTH)).show();
-    }
 
-    private void updateTime() {
-        new TimePickerDialog(this, t, dateTime.get(Calendar.HOUR_OF_DAY), dateTime.get(Calendar.MINUTE), true).show();
     }
 
     DatePickerDialog.OnDateSetListener d = new DatePickerDialog.OnDateSetListener() {
@@ -71,16 +99,6 @@ public class CalendarActivity extends AppCompatActivity {
             dateTime.set(Calendar.MONTH, month);
             dateTime.set(Calendar.DAY_OF_MONTH,dayOfMonth);
             updateTextLabel();
-        }
-    };
-
-    TimePickerDialog.OnTimeSetListener t = new TimePickerDialog.OnTimeSetListener() {
-        @Override
-        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-            dateTime.set(Calendar.HOUR_OF_DAY, hourOfDay);
-            dateTime.set(Calendar.MINUTE, minute);
-            updateTextLabel();
-
         }
     };
 
