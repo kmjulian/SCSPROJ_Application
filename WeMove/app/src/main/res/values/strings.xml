@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">WeMove</string>
-    <string name="show_dialog">Show Dialog</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
     
     <string-array name="selectTime">
         <item>Choose a time…</item>
