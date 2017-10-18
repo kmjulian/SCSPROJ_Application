@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24px"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/nav_activities"
+            android:icon="@drawable/ic_event_note_black_24px"
+            android:title="@string/Activities" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24px"
+            android:title="@string/Search" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/Tools" />
+        <item
+            android:id="@+id/nav_legal"
+            android:icon="@drawable/ic_help_outline_black_24px"
+            android:title="@string/Legal" />
+    </group>
+
+</menu>

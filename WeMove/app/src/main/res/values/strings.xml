@@ -5,6 +5,7 @@
     
     <string-array name="selectTime">
         <item>Choose a time…</item>
+        <item>Whole day</item>
         <item>Early AM</item>
         <item>AM</item>
         <item>Mid Day</item>
