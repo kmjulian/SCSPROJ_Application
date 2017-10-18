@@ -90,10 +90,6 @@ public class Activities extends AppCompatActivity
                 Intent h = new Intent(Activities.this, MainActivity.class);
                 startActivity(h);
                 break;
-            case R.id.nav_search:
-                Intent s = new Intent(Activities.this, Search.class);
-                startActivity(s);
-                break;
             case R.id.nav_manage:
                 Intent t = new Intent(Activities.this, Tools.class);
                 startActivity(t);

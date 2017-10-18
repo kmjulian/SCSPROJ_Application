@@ -11,10 +11,6 @@
             android:icon="@drawable/ic_event_note_black_24px"
             android:title="@string/Activities" />
         <item
-            android:id="@+id/nav_search"
-            android:icon="@drawable/ic_search_black_24px"
-            android:title="@string/Search" />
-        <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="@string/Tools" />

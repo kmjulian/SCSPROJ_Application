@@ -90,10 +90,6 @@ public class Tools extends AppCompatActivity
                 Intent a = new Intent(Tools.this, Activities.class);
                 startActivity(a);
                 break;
-            case R.id.nav_search:
-                Intent s = new Intent(Tools.this, Search.class);
-                startActivity(s);
-                break;
             case R.id.nav_manage:
                 Intent t = new Intent(Tools.this, Tools.class);
                 startActivity(t);
