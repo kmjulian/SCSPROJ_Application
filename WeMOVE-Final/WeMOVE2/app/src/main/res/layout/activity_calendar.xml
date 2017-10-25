@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:text="NEXT"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_editor_absoluteY="341dp"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <TextView
+        android:id="@+id/viewDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Time"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_editor_absoluteY="85dp"
+        tools:layout_editor_absoluteX="121dp" />
+
+    <Button
+        android:id="@+id/btntoDate"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:text="Select Date"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_editor_absoluteY="178dp"
+        tools:layout_editor_absoluteX="89dp" />
+
+    <Button
+        android:id="@+id/btntoTime"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:text="Select Time"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_editor_absoluteY="231dp"
+        tools:layout_editor_absoluteX="89dp" />
+
+</android.support.constraint.ConstraintLayout>

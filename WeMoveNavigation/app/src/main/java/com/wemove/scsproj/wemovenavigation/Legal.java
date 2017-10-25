@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -36,7 +37,7 @@ public class Legal extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -83,20 +84,24 @@ public class Legal extends AppCompatActivity
         switch (id) {
 
             case R.id.nav_home:
-                Intent h = new Intent(Legal.this, MainActivity.class);
-                startActivity(h);
-                break;
-            case R.id.nav_activities:
-                Intent a = new Intent(Legal.this, Activities.class);
-                startActivity(a);
+                HomeFragment homeFragment = new HomeFragment();
+                FragmentManager manager = getSupportFragmentManager();
+                manager.beginTransaction().replace(R.id.relativelayout_for_fragment, homeFragment,
+                        homeFragment.getTag()).commit();
                 break;
             case R.id.nav_manage:
                 Intent t = new Intent(Legal.this, Tools.class);
                 startActivity(t);
                 break;
-            case R.id.nav_legal:
-                Intent l = new Intent(Legal.this, Legal.class);
+            case R.id.nav_share:
+                Intent l = new Intent(Legal.this, Share.class);
                 startActivity(l);
+                break;
+            case R.id.nav_legal:
+                LegalFragment legalFragment = new LegalFragment();
+                FragmentManager manager1 = getSupportFragmentManager();
+                manager1.beginTransaction().replace(R.id.relativelayout_for_legal, legalFragment,
+                        legalFragment.getTag()).commit();
                 break;
         }
 

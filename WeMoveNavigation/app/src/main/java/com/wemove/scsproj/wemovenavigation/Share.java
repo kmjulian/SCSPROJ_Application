@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,13 +15,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Activities extends AppCompatActivity
+public class Share extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activities);
+        setContentView(R.layout.activity_legal);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -36,7 +37,7 @@ public class Activities extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -83,20 +84,24 @@ public class Activities extends AppCompatActivity
         switch (id) {
 
             case R.id.nav_home:
-                Intent a = new Intent(Activities.this, Activities.class);
-                startActivity(a);
-                break;
-            case R.id.nav_activities:
-                Intent h = new Intent(Activities.this, MainActivity.class);
-                startActivity(h);
+                HomeFragment homeFragment = new HomeFragment();
+                FragmentManager manager = getSupportFragmentManager();
+                manager.beginTransaction().replace(R.id.relativelayout_for_fragment, homeFragment,
+                        homeFragment.getTag()).commit();
                 break;
             case R.id.nav_manage:
-                Intent t = new Intent(Activities.this, Tools.class);
+                Intent t = new Intent(Share.this, Tools.class);
                 startActivity(t);
                 break;
-            case R.id.nav_legal:
-                Intent l = new Intent(Activities.this, Legal.class);
+            case R.id.nav_share:
+                Intent l = new Intent(Share.this, Share.class);
                 startActivity(l);
+                break;
+            case R.id.nav_legal:
+                LegalFragment legalFragment = new LegalFragment();
+                FragmentManager manager1 = getSupportFragmentManager();
+                manager1.beginTransaction().replace(R.id.relativelayout_for_legal, legalFragment,
+                        legalFragment.getTag()).commit();
                 break;
         }
 
