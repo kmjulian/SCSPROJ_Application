@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton imageButtonAcount;
+    ImageButton imageButtonAccount;
     ImageButton imageButtonHome;
 
     @Override
@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageButtonAcount = (ImageButton) findViewById(R.id.imageButtonAccount);
+        imageButtonAccount = (ImageButton) findViewById(R.id.imageButtonAccount);
 
-        imageButtonAcount.setOnClickListener(new View.OnClickListener() {
+        imageButtonAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentLoadViewActivity = new Intent(MainActivity.this, AccountActivity.class);
