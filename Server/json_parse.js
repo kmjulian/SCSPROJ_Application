@@ -10,12 +10,12 @@ for (var i = 0; i < origins.length; i++) {
 		var current_destination = destinations[j];
 		var stem = branch["elements"][j];
 		var distance = stem["distance"]["value"];
-		var duration = stem["duration"]["value"];
+		var traveltime = stem["TravelTime"]["value"];
 		
 		console.log("FROM: " + current_origin);
 		console.log("TO: " + current_destination);
 		console.log("DISTANCE: " + distance);
-		console.log("DURATION: " + duration);
+		console.log("TRAVEL TIME: " + duration);
 
 	}
 }

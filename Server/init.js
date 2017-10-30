@@ -14,30 +14,6 @@ var config = {
 
 }
 
-var json0 = require("./data/Monday 0.json");
-var json1 = require("./data/Monday 1.json");
-var json2 = require("./data/Monday 2.json");
-var json3 = require("./data/Monday 3.json");
-var json4 = require("./data/Monday 4.json");
-var json5 = require("./data/Monday 5.json");
-var json6 = require("./data/Monday 6.json");
-var json7 = require("./data/Monday 7.json");
-var json8 = require("./data/Monday 8.json");
-var json9 = require("./data/Monday 9.json");
-var json10 = require("./data/Monday 10.json");
-var json11 = require("./data/Monday 11.json");
-var json12 = require("./data/Monday 12.json");
-var json13 = require("./data/Monday 13.json");
-var json14 = require("./data/Monday 14.json");
-var json15 = require("./data/Monday 15.json");
-var json16 = require("./data/Monday 16.json");
-var json17 = require("./data/Monday 17.json");
-var json18 = require("./data/Monday 18.json");
-var json19 = require("./data/Monday 19.json");
-var json20 = require("./data/Monday 20.json");
-var json21 = require("./data/Monday 1.json");
-var json22 = require("./data/Monday 2.json");
-var json23 = require("./data/Monday 3.json");
 
 var my_json = json1;
 
@@ -70,8 +46,8 @@ pool.connect(function (err, client, done) {
 						distance = 0;
 						duration = 0;
 					} else {
-						var distance = stem["distance"]["value"] + Math.floor((getRandomArbitrary(0, 1) * 300));
-						var duration = stem["duration"]["value"] + Math.floor((getRandomArbitrary(0, 1) * 300));	
+						var distance = stem["TravelTime"]["value"] + Math.floor((getRandomArbitrary(0, 1) * 300));
+						var duration = stem["TravelTime"]["value"] + Math.floor((getRandomArbitrary(0, 1) * 300));	
 					}
 					
 					var day = days[g];
@@ -79,7 +55,7 @@ pool.connect(function (err, client, done) {
 					
 
 					var insertQuery = format('INSERT INTO %I VALUES (%L, %L, %L, %L, %L, %L)', 
-						table_name, origin, destination, day, hour, distance, duration);	
+						table_name, origin, destination, day, hour, traveltime);	
 				
 					console.log(insertQuery);
 

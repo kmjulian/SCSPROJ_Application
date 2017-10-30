@@ -5,7 +5,7 @@ var options = {
   promiseLib: promise
 };
 
-var my_json = require("./data/Monday 0.json");
+//var my_json = require("./data/Monday 0.json");
 
 var origins = my_json["origin_addresses"];
 var destinations = my_json["destination_addresses"];
@@ -27,7 +27,7 @@ var db = pgp(cn);
 module.exports = {
   getAllOrigins: getAllOrigins,
   getAllDestinations: getAllDestinations,
-  getJamLevel: getJamLevel
+  getTravelTime: getTravelTime
 };
 
 
@@ -40,7 +40,7 @@ function getAllDestinations(req, res, next) {
 	res.status(200).json(destinations);
 }
 
-function getJamLevel(req, res, next) {
+function getTravelTime(req, res, next) {
 	origin = decodeURI(req.params.origin).replace(/\+/g, ' ');
 	destination = decodeURI(req.params.destination).replace(/\+/g, ' ');
 	day = req.params.day;
@@ -48,7 +48,7 @@ function getJamLevel(req, res, next) {
 	console.log(origin);
 	console.log(destination);
 	// console.log(req.params);
-	var query = 'select distance, duration from histories where origin = \'' + origin + '\' and destination = \'' + destination + '\'' + 'and day = \'' +  day + '\' and hour = \'' + hour + '\'';
+	var query = 'select distance, getTravelTime from histories where origin = \'' + origin + '\' and destination = \'' + destination + '\'' + 'and day = \'' +  day + '\' and hour = \'' + hour + '\'';
 	db.any(query)
 		.then (function (data) {
 			res.status(200)

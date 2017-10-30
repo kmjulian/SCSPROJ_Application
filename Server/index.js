@@ -45,7 +45,7 @@ var db = require('./queries');
 
 router.get('/api/origins', db.getAllOrigins);
 router.get('/api/destinations', db.getAllDestinations);
-router.get('/api/jamlevel/:origin/:destination/:day/:hour', db.getJamLevel);
+router.get('/api/jamlevel/:origin/:destination/:day/:hour', db.getTravelTime);
 
 app.use('/', router);
 
