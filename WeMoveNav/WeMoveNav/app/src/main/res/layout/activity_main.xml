@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:fab=""
+    xmlns:fab="http://schemas.android.com/fab"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,6 +38,10 @@
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="348dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         fab:menu_animationDelayPerItem="50"
         fab:menu_backgroundColor="@android:color/transparent"
         fab:menu_buttonSpacing="0dp"
@@ -72,36 +77,32 @@
         fab:menu_shadowXOffset="1dp"
         fab:menu_shadowYOffset="3dp"
         fab:menu_showShadow="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="351dp">
+        tools:layout_editor_absoluteY="291dp">
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_item"
-            fab:fab_label="Home"
-            fab:fab_size="mini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_home" />
+            android:src="@drawable/ic_home"
+            fab:fab_label="Home"
+            fab:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/account_item"
-            fab:fab_label="Account"
-            fab:fab_size="mini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_account" />
+            android:src="@drawable/ic_account"
+            fab:fab_label="Account"
+            fab:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/map_item"
-            fab:fab_label="Map"
-            fab:fab_size="mini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_navigation" />
+            android:src="@drawable/ic_navigation"
+            fab:fab_label="Map"
+            fab:fab_size="mini" />
 
     </com.github.clans.fab.FloatingActionMenu>
 
