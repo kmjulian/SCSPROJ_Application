@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
 
         TextView textViewRegisterUser;
 
-        textViewRegisterUser = (TextView) findViewById(R.id.textViewRegisterUser);
+        textViewRegisterUser = (TextView) findViewById(R.id.registerUser);
 
         textViewRegisterUser.setOnClickListener(new View.OnClickListener() {
             @Override
