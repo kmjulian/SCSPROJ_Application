@@ -14,6 +14,7 @@
         android:layout_height="37dp"
         android:ems="10"
         android:hint="Username"
+        android:drawableLeft="@drawable/ic_action_user"
         android:background="#11000000"
         android:textAlignment="center"
         android:textSize="12sp"
@@ -34,6 +35,7 @@
         android:layout_height="37dp"
         android:ems="10"
         android:hint="Name"
+        android:drawableLeft="@drawable/ic_action_name"
         android:background="#11000000"
         android:textAlignment="center"
         android:textSize="12sp"
@@ -51,6 +53,7 @@
         android:layout_height="37dp"
         android:ems="10"
         android:hint="Email Address"
+        android:drawableLeft="@drawable/ic_action_email"
         android:background="#11000000"
         android:textAlignment="center"
         android:textSize="12sp"
@@ -68,6 +71,7 @@
         android:ems="10"
         android:inputType="number"
         android:hint="Mobile No."
+        android:drawableLeft="@drawable/ic_action_mobile"
         android:background="#11000000"
         android:textAlignment="center"
         android:textSize="12sp"
@@ -87,6 +91,7 @@
         android:ems="10"
         android:inputType="textPassword"
         android:hint="Password"
+        android:drawableLeft="@drawable/ic_action_password"
         android:background="#11000000"
         android:textAlignment="center"
         android:textSize="12sp"
@@ -104,7 +109,20 @@
         tools:layout_editor_absoluteY="467dp"
         app:cardBackgroundColor="@color/colorAccent"
         app:cardCornerRadius="25dp"
-        app:cardElevation="10dp"/>
+        app:cardElevation="10dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Register"
+                android:textColor="#F9F9F9"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>
