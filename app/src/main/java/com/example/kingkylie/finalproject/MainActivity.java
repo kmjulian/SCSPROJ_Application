@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     String TAG = "";
     private DatabaseReference mDatabase;
+    private FirebaseAuth mAuth;
 
 
     @Override
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         // ...
         mDatabase = FirebaseDatabase.getInstance().getReference();
+        mAuth = FirebaseAuth.getInstance();
 
 
 
@@ -46,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
                 Log.w(TAG, "Failed to read value.", error.toException());
+            }
+
+            @Override
+            public void onStart() {
+                super.onStart();
+                // Check if user is signed in (non-null) and update UI accordingly.
+                FirebaseUser currentUser = mAuth.getCurrentUser();
+                updateUI(currentUser);
             }
         });
     }
