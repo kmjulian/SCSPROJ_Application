@@ -173,7 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="Metro Manila, Philippines"
+                android:text="Quezon City, Philippines"
                 android:textSize="18sp"/>
         </LinearLayout>
 

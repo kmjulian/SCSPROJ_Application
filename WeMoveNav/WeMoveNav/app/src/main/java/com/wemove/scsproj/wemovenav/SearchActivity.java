@@ -16,16 +16,5 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-
-        mFAB = (FloatingActionButton) findViewById(R.id.menu_item);
-
-        mFAB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(SearchActivity.this, "Home", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(SearchActivity.this, SearchActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }
