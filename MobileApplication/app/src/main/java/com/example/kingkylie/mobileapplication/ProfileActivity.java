@@ -26,6 +26,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
     private TextView textview2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,13 +35,18 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         textview2 = (TextView)findViewById(R.id.textView2);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference reference = database.getReference().child("0");
+        DatabaseReference reference = database.getReference().child("1");
+
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                textview2.setText(value);
+
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()){
+                    Data data = postSnapshot.getValue(Data.class);
+
+                    textview2.setText(data.getAM_Mean_Travel_Time());
+                }
             }
 
             @Override
