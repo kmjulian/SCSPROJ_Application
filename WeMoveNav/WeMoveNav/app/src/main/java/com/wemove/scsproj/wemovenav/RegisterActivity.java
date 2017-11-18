@@ -75,13 +75,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         //getting infos from edit texts
         String name = regName.getText().toString().trim();
         String email = regEmailadd.getText().toString().trim();
-        String name = regName.getText().toString().trim();
+        String regname = regName.getText().toString().trim();
         String mobileno = regMobileno.getText().toString().trim();
         String password = regPassword.getText().toString().trim();
 
         //cheking if infos are empty
-
-        if (TextUtils.isEmpty(name)) {
+        if (TextUtils.isEmpty(regname)) {
             Toast.makeText(this, "Please enter email", Toast.LENGTH_LONG).show();
             return;
 

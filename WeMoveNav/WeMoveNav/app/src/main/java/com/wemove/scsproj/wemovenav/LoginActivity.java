@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -25,6 +26,7 @@ import org.w3c.dom.Text;
  */
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+
     public static final String TAG = "LoginActivity";
 
     //defining views
@@ -105,7 +107,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             finish();
                             startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                         } else
-                            Toast.makeText(LoginActivity.this, "Sign in fialed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Sign in failed", Toast.LENGTH_SHORT).show();
                     }
                 });
     }
