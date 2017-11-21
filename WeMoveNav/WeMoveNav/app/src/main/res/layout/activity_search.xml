@@ -15,14 +15,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/searchView"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="43dp"
         android:layout_marginStart="43dp"
-        android:layout_marginTop="83dp"
+        android:layout_marginTop="80dp"
         android:text="Current Location"
+        android:textSize="18sp"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="65dp"
-        android:textSize="15sp"/>
+        android:textColor="#FFFFFF"/>
+
 
     <TextView
         android:id="@+id/textView3"
@@ -35,7 +37,8 @@
         android:text="Destination"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="145dp"
-        android:textSize="15sp"/>
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"/>
 
     <android.support.v7.widget.CardView
         android:id="@+id/btnCalendar"
@@ -51,8 +54,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true">
+            android:layout_alignLeft="@+id/btnCalendar"
+            android:layout_alignStart="@+id/btnCalendar"
+            android:layout_below="@+id/btnCalendar">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -63,6 +67,31 @@
                 android:textSize="14sp" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="   Enter current location"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:background="#11000000"/>
+
+    <Button
+        android:id="@+id/btnDestination"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="22dp"
+        android:text="   Enter destination"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:background="#11000000"/>
 
 
 </RelativeLayout>

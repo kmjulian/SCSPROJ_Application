@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -25,8 +26,8 @@ public class CalendarActivity extends AppCompatActivity {
     DateFormat formatDateTime = DateFormat.getDateTimeInstance();
     Calendar dateTime = Calendar.getInstance();
     private TextView text;
-    private Button btntoDate;
-    private Button btntoTime;
+    private CardView btntoDate;
+    private CardView btntoTime;
 
 
     @Override
@@ -35,8 +36,8 @@ public class CalendarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calendar);
 
         text = (TextView) findViewById(R.id.viewDateTime);
-        btntoDate = (Button) findViewById(R.id.btntoDate);
-        btntoTime = (Button) findViewById(R.id.btntoTime);
+        btntoDate = (CardView) findViewById(R.id.btntoDate);
+        btntoTime = (CardView) findViewById(R.id.btntoTime);
 
         btntoDate.setOnClickListener(new View.OnClickListener() {
             @Override
