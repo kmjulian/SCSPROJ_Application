@@ -75,7 +75,7 @@
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
-        android:text="   Enter current location"
+        android:hint="   Enter current location"
         android:textAlignment="textStart"
         android:textAllCaps="false"
         android:background="#11000000"/>
@@ -84,14 +84,14 @@
         android:id="@+id/btnDestination"
         android:layout_width="400dp"
         android:layout_height="40dp"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3"
+        android:layout_alignLeft="@+id/btnLocation"
+        android:layout_alignStart="@+id/btnLocation"
         android:layout_below="@+id/textView3"
         android:layout_marginTop="22dp"
-        android:text="   Enter destination"
+        android:background="#11000000"
+        android:hint="   Enter destination"
         android:textAlignment="textStart"
-        android:textAllCaps="false"
-        android:background="#11000000"/>
+        android:textAllCaps="false" />
 
 
 </RelativeLayout>

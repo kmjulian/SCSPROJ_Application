@@ -21,7 +21,7 @@
         android:layout_height="37dp"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="50dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
@@ -42,7 +42,7 @@
         android:ems="10"
         android:hint="Name"
         android:textAlignment="center"
-        android:textSize="12sp"/>
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/regEmailadd"
@@ -50,13 +50,14 @@
         android:layout_height="37dp"
         android:layout_alignLeft="@+id/name"
         android:layout_alignStart="@+id/name"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="39dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_email"
         android:ems="10"
         android:hint="Email address"
         android:textAlignment="center"
-        android:textSize="12sp"/>
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/mobileno"
