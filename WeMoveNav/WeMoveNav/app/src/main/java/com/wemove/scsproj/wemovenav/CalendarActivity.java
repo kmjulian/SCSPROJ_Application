@@ -2,6 +2,7 @@ package com.wemove.scsproj.wemovenav;
 
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +29,7 @@ public class CalendarActivity extends AppCompatActivity {
     private TextView text;
     private CardView btntoDate;
     private CardView btntoTime;
+    private CardView btntoEnter;
 
 
     @Override
@@ -80,6 +82,13 @@ public class CalendarActivity extends AppCompatActivity {
                 mBuilder.setView(mView);
                 AlertDialog dialog = mBuilder.create();
                 dialog.show();
+            }
+        });
+
+        btntoEnter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CalendarActivity.this, TravelData.class);
             }
         });
     }
