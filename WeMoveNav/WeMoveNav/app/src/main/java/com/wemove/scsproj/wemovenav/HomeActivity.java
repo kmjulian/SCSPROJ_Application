@@ -15,7 +15,6 @@ public class HomeActivity extends AppCompatActivity {
 
     private CardView accountButton;
     private CardView searchButton;
-    private CardView eventButton;
     private CardView helpButton;
 
     @Override
@@ -38,15 +37,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, SearchActivity.class);
                 startActivity(intent);
-            }
-        });
 
-        eventButton = (CardView) findViewById(R.id.event_button);
-        eventButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, EventActivity.class);
-                startActivity(intent);
             }
         });
 
@@ -54,19 +45,9 @@ public class HomeActivity extends AppCompatActivity {
         helpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, HelpActivity.class);
+                Intent intent = new Intent(HomeActivity.this, TermsAgreeActivity.class);
                 startActivity(intent);
             }
         });
-    }
-
-    public void process(View view) {
-        Intent intent = null;
-        if(view.getId()==R.id.maps_button) {
-            intent = new Intent(android.content.Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("geo:14.599512,120.984222"));
-            startActivity(intent);
-
-        }
     }
 }
