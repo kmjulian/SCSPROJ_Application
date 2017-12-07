@@ -10,11 +10,26 @@
         <item>Evening</item>
     </string-array>
 
+    <string-array name="selectDay">
+        <item>Choose a day..</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
     <string-array name="selectLocation">
         <item>Choose current location..</item>
+        <item>Asia Pacific College</item>
+        <item>Taguig City</item>
     </string-array>
 
     <string-array name="selectDestination">
         <item>Choose destination..</item>
+        <item>Asia Pacific College</item>
+        <item>Taguig City</item>
     </string-array>
 </resources>

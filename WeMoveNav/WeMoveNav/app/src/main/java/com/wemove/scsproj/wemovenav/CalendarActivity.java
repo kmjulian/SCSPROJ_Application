@@ -40,12 +40,41 @@ public class CalendarActivity extends AppCompatActivity {
         text = (TextView) findViewById(R.id.viewDateTime);
         btntoDate = (CardView) findViewById(R.id.btntoDate);
         btntoTime = (CardView) findViewById(R.id.btntoTime);
+        btntoEnter = (CardView) findViewById(R.id.btntoEnter);
 
         btntoDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateDate();
+                AlertDialog.Builder mBuilder = new AlertDialog.Builder(CalendarActivity.this);
+                View mView = getLayoutInflater().inflate(R.layout.spinner_time, null);
+                mBuilder.setTitle("Select day");
+                final Spinner mSpinner = (Spinner) mView.findViewById(R.id.spinner);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(CalendarActivity.this,
+                        android.R.layout.simple_spinner_item,
+                        getResources().getStringArray(R.array.selectDay));
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                mSpinner.setAdapter(adapter);
 
+                mBuilder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        if (!mSpinner.getSelectedItem().toString().equalsIgnoreCase("Choose a day...")) {
+                            Toast.makeText(CalendarActivity.this,
+                                    mSpinner.getSelectedItem().toString(),
+                                    Toast.LENGTH_SHORT)
+                                    .show();
+                        }
+                    }
+                });
+                mBuilder.setNegativeButton("Dismiss", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                mBuilder.setView(mView);
+                AlertDialog dialog = mBuilder.create();
+                dialog.show();
             }
         });
 
@@ -88,22 +117,9 @@ public class CalendarActivity extends AppCompatActivity {
         btntoEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CalendarActivity.this, TravelData.class);
+                Intent intent = new Intent(CalendarActivity.this, OutputActivity.class);
             }
         });
     }
-
-    private void updateDate() {
-        new DatePickerDialog(this, d, dateTime.get(Calendar.YEAR), dateTime.get(Calendar.MONTH), dateTime.get(Calendar.DAY_OF_MONTH)).show();
-
-    }
-
-    DatePickerDialog.OnDateSetListener d = new DatePickerDialog.OnDateSetListener() {
-        @Override
-        public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-            dateTime.set(Calendar.YEAR, year);
-            dateTime.set(Calendar.MONTH, month);
-            dateTime.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-        }
-    };
 }
+
