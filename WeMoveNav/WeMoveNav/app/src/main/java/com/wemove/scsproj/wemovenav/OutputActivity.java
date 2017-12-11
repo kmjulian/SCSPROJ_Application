@@ -31,10 +31,11 @@ public class OutputActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travel);
 
+        String travelID = (getIntent().getStringExtra(SearchActivity.travelID));
+
         travelDatas = new ArrayList<>();
-        databaseTravelData = FirebaseDatabase.getInstance().getReference("travel-data1");
         listViewTravelDatas = (ListView) findViewById(R.id.listViewTravelDatas);
-        databaseView = FirebaseDatabase.getInstance().getReference("travel-data1");
+        databaseView = FirebaseDatabase.getInstance().getReference(travelID);
 
     }
 

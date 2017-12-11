@@ -30,11 +30,9 @@ public class TravelDataList extends ArrayAdapter<TravelData> {
         View listViewItem = inflater.inflate(R.layout.activity_datalist, null, true);
 
         TextView textViewTravelTime = (TextView) listViewItem.findViewById(R.id.textViewTravelTime);
-        TextView textViewTrafficRate = (TextView) listViewItem.findViewById(R.id.textViewTrafficRate);
 
         TravelData travelData = travelDatas.get(position);
         textViewTravelTime.setText(travelData.getTravelTime());
-        textViewTrafficRate.setText(travelData.getTrafficRate());
 
         return listViewItem;
     }

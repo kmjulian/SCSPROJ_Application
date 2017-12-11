@@ -24,10 +24,8 @@ import java.util.Calendar;
 
 public class CalendarActivity extends AppCompatActivity {
 
-    DateFormat formatDateTime = DateFormat.getDateTimeInstance();
-    Calendar dateTime = Calendar.getInstance();
     private TextView text;
-    private CardView btntoDate;
+    private CardView btntoDay;
     private CardView btntoTime;
     private CardView btntoEnter;
 
@@ -38,11 +36,11 @@ public class CalendarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calendar);
 
         text = (TextView) findViewById(R.id.viewDateTime);
-        btntoDate = (CardView) findViewById(R.id.btntoDate);
+        btntoDay = (CardView) findViewById(R.id.btntoDay);
         btntoTime = (CardView) findViewById(R.id.btntoTime);
         btntoEnter = (CardView) findViewById(R.id.btntoEnter);
 
-        btntoDate.setOnClickListener(new View.OnClickListener() {
+        btntoDay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(CalendarActivity.this);

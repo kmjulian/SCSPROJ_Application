@@ -24,12 +24,12 @@
     <string-array name="selectLocation">
         <item>Choose current location..</item>
         <item>Asia Pacific College</item>
-        <item>Taguig City</item>
+        <item>Mckinley Road, Makati</item>
     </string-array>
 
     <string-array name="selectDestination">
         <item>Choose destination..</item>
         <item>Asia Pacific College</item>
-        <item>Taguig City</item>
+        <item>Mckinley Road, Makati</item>
     </string-array>
 </resources>
