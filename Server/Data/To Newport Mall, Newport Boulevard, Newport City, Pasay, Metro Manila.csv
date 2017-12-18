@@ -1,97 +1,93 @@
-Date,Day,Origin Display Name,Destination Display Name,Daily Mean Travel Time (Seconds),Daily Range - Lower Bound Travel Time (Seconds),Daily Range - Upper Bound Travel Time (Seconds),AM Mean Travel Time (Seconds),AM Range - Lower Bound Travel Time (Seconds),AM Range - Upper Bound Travel Time (Seconds),PM Mean Travel Time (Seconds),PM Range - Lower Bound Travel Time (Seconds),PM Range - Upper Bound Travel Time (Seconds),Midday Mean Travel Time (Seconds),Midday Range - Lower Bound Travel Time (Seconds),Midday Range - Upper Bound Travel Time (Seconds),Evening Mean Travel Time (Seconds),Evening Range - Lower Bound Travel Time (Seconds),Evening Range - Upper Bound Travel Time (Seconds),Early Morning Mean Travel Time (Seconds),Early Morning Range - Lower Bound Travel Time (Seconds),Early Morning Range - Upper Bound Travel Time (Seconds)
-03/30/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",201,154,263,222,177,278,447,304,657,291,195,436,417,258,672,201,152,266
-03/31/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",295,203,429,228,176,294,333,230,481,309,212,450,267,185,383,200,152,264
-04/01/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",194,148,255,193,146,255,252,178,357,234,172,320,241,164,352,192,148,250
-04/02/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",272,187,397,202,140,293,301,194,469,249,185,336,303,202,455,200,141,283
-04/03/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",400,236,677,220,161,301,492,315,769,295,199,437,524,291,941,204,144,290
-04/04/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",206,148,288,250,190,328,354,217,577,307,208,453,339,221,519,208,145,297
-04/05/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",196,154,249,249,188,328,387,245,611,276,196,388,339,218,527,192,153,241
-04/06/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",344,220,538,246,193,314,446,299,664,320,211,487,333,204,542,190,152,237
-04/07/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",305,204,455,191,141,259,434,268,704,277,201,382,260,196,345,198,153,255
-04/08/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",189,147,244,173,149,202,253,176,363,230,176,301,231,153,347,192,147,250
-04/09/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",274,186,405,202,157,259,305,200,466,249,185,336,303,193,476,194,145,259
-04/10/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",273,190,393,228,167,312,343,235,499,244,181,330,289,195,427,198,149,263
-04/11/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",301,210,432,246,189,322,347,232,520,282,207,385,301,205,441,203,153,270
-04/12/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",257,189,349,245,176,339,256,190,345,267,195,367,234,181,303,194,153,245
-04/13/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",183,138,242,212,141,320,202,151,269,202,143,285,232,139,386,186,140,248
-04/14/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",207,159,271,180,144,223,217,168,281,201,153,264,218,167,283,178,129,246
-04/15/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",198,145,270,176,143,217,247,181,336,221,165,296,253,156,410,202,146,281
-04/16/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",272,185,401,194,159,236,294,194,445,247,178,343,301,198,459,214,134,344
-04/17/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",199,144,276,196,160,240,323,211,494,265,194,363,328,216,500,200,142,280
-04/18/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",192,147,252,203,132,313,356,231,548,357,221,578,465,286,756,191,151,241
-04/19/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",218,169,281,262,181,378,349,227,535,251,192,328,465,273,790,212,164,275
-04/20/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",220,168,289,303,191,481,333,204,543,297,209,421,404,263,623,221,167,292
-04/21/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",199,154,257,282,215,372,472,336,664,319,213,477,396,240,652,199,153,259
-04/22/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",229,171,308,180,141,230,240,184,313,229,168,311,223,168,296,194,148,253
-04/23/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",279,195,399,255,168,387,318,214,472,249,190,326,308,203,465,213,162,279
-04/24/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",185,146,234,179,149,216,413,236,724,344,213,556,324,224,469,186,146,236
-04/25/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",402,236,685,228,187,277,384,238,618,360,221,587,538,304,951,203,152,271
-04/26/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",404,239,682,215,158,294,553,355,861,350,216,567,408,241,690,209,155,283
-04/27/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",197,155,251,190,163,221,242,188,310,254,170,378,236,181,307,198,154,256
-04/28/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",194,148,255,237,170,331,292,211,406,231,173,309,269,192,376,195,147,258
-04/29/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",204,145,287,187,156,225,223,150,331,202,154,266,224,172,292,207,145,295
-04/30/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",213,160,283,174,145,210,222,168,294,210,162,272,224,157,318,183,138,243
-05/01/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",332,193,569,227,155,334,344,199,593,259,182,369,515,253,1049,190,143,251
-05/02/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",209,143,304,249,179,346,318,216,467,258,187,355,308,204,466,211,142,314
-05/03/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",195,149,254,263,187,369,384,271,545,273,197,377,382,239,610,193,147,254
-05/04/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",340,211,547,190,157,231,420,243,727,281,193,411,386,235,636,193,155,240
-05/05/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",267,193,371,207,172,248,313,213,461,267,197,362,258,190,351,200,156,255
-05/06/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",181,145,226,186,149,232,232,184,292,218,169,280,274,176,426,183,145,231
-05/07/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",261,186,368,230,169,314,282,206,386,243,182,325,290,186,451,199,148,266
-05/08/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",315,202,493,274,174,433,338,213,538,267,189,376,402,241,669,190,145,249
-05/09/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",213,153,295,226,172,296,333,222,499,281,194,406,287,192,428,214,153,299
-05/10/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",193,148,251,236,180,310,290,197,426,252,186,343,295,189,460,193,147,253
-05/11/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",330,215,504,234,174,313,347,238,505,284,197,410,393,246,629,187,148,237
-05/12/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",209,143,306,227,176,293,302,229,398,267,198,362,282,180,442,209,139,312
-05/13/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",185,145,237,238,154,368,245,184,325,242,173,339,279,173,450,185,144,237
-05/14/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",195,126,303,256,156,417,356,213,596,247,184,331,309,201,475,187,121,287
-05/15/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",298,203,437,245,175,343,316,220,454,276,195,389,337,217,522,200,146,274
-05/16/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",327,208,514,186,153,227,359,242,533,265,194,363,441,237,819,179,147,218
-05/17/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",268,187,383,225,186,272,323,234,445,248,185,334,261,169,403,186,144,241
-05/18/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",351,225,548,274,200,377,513,351,749,277,199,386,360,229,565,198,149,263
-05/19/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",279,195,400,190,162,224,307,220,430,273,191,389,295,201,432,201,145,279
-05/20/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",193,147,254,180,126,257,246,176,344,222,155,319,254,152,423,196,148,259
-05/21/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",259,177,381,206,150,284,310,185,519,243,172,344,251,185,341,194,142,266
-05/22/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",193,130,288,221,167,293,385,224,663,238,178,320,363,220,600,191,126,290
-05/23/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",197,152,255,210,164,270,371,261,525,306,214,438,326,202,525,195,151,252
-05/24/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",189,149,240,210,169,262,414,266,645,272,197,378,300,212,424,186,147,236
-05/25/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",384,221,667,221,119,408,524,332,825,267,184,388,537,319,903,192,150,246
-05/26/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",192,149,249,206,152,279,341,228,509,289,207,404,271,210,350,190,148,243
-05/27/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",223,164,302,183,150,224,237,179,313,217,166,285,233,157,345,187,145,242
-05/28/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",266,187,380,213,160,282,310,215,447,242,175,334,283,196,409,193,143,262
-05/29/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",310,198,485,215,168,274,427,263,694,258,181,368,310,201,479,188,134,262
-05/30/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",304,200,462,212,163,275,373,246,565,254,188,343,346,212,566,180,149,218
-05/31/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",330,211,516,280,177,442,417,265,658,300,197,457,321,215,479,197,141,277
-06/01/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",305,200,466,396,208,752,361,248,524,281,194,408,266,180,392,274,189,396
-06/02/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",195,151,252,199,158,252,297,202,437,269,193,375,224,166,304,195,151,252
-06/03/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",225,159,318,209,154,285,252,164,390,208,158,275,244,164,363,195,146,261
-06/04/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",253,169,379,228,163,321,326,205,518,230,156,337,238,173,327,193,138,270
-06/05/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",255,177,368,214,163,280,255,191,340,229,165,317,304,191,485,195,140,273
-06/06/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",275,180,419,193,165,226,324,217,484,217,169,277,341,197,588,176,143,217
-06/07/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",187,146,241,202,154,266,317,216,464,231,170,314,275,189,401,185,145,236
-06/08/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",194,149,254,235,176,314,414,292,588,263,189,367,265,184,381,193,146,254
-06/09/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",234,170,321,214,172,267,248,187,330,235,170,326,221,154,318,200,152,262
-06/10/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",183,140,237,177,138,227,212,161,279,223,154,322,235,162,342,184,141,239
-06/11/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",204,149,277,191,142,258,204,152,275,196,153,250,222,146,336,187,147,239
-06/12/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",254,171,379,187,163,214,292,178,480,217,166,282,293,187,458,182,141,234
-06/13/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",272,187,396,310,206,466,270,183,399,229,179,293,333,211,525,200,145,276
-06/14/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",187,148,236,195,154,247,513,300,879,235,167,330,507,285,901,185,147,233
-06/15/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",368,216,626,263,167,413,542,293,1002,289,192,435,421,254,698,189,145,247
-06/16/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",196,146,262,172,154,192,274,191,393,239,176,326,242,179,327,200,146,273
-06/17/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",186,144,242,175,147,207,220,167,291,204,156,266,225,160,315,189,143,248
-06/18/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",182,144,231,181,156,211,405,245,669,226,173,295,400,215,743,182,143,233
-06/19/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",272,195,379,242,182,322,336,230,489,240,188,306,283,199,404,196,148,259
-06/20/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",214,145,315,243,185,318,334,204,546,267,188,381,330,217,500,211,141,318
-06/21/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",189,149,239,226,170,302,560,310,1012,247,188,324,388,222,680,182,151,221
-06/22/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",321,210,490,238,175,324,353,221,565,268,199,362,436,273,697,205,151,278
-06/23/2017,Friday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",200,147,271,198,161,244,407,260,637,233,173,314,259,183,366,201,146,277
-06/24/2017,Saturday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",210,162,273,185,133,258,209,173,252,200,161,250,246,168,360,187,148,236
-06/25/2017,Sunday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",202,154,265,177,147,212,204,163,256,196,152,254,221,158,308,178,138,230
-06/26/2017,Monday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",196,137,282,206,158,268,379,216,665,234,178,307,330,205,529,187,133,263
-06/27/2017,Tuesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",288,189,439,189,161,223,317,198,507,256,180,364,338,215,530,180,147,221
-06/28/2017,Wednesday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",271,184,399,252,166,381,308,226,419,232,171,315,306,193,487,189,143,250
-06/29/2017,Thursday,"Asia Pacific College, 3 Humabon, Makati, Kalakhang Maynila","Newport Mall, Newport Boulevard, Newport City, Pasay, Metro Manila",392,224,686,228,178,291,582,300,1129,272,193,382,549,316,954,186,145,238
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
+Date,Day,Daily Mean Travel Time (Seconds),AM Mean Travel Time (Seconds),PM Mean Travel Time (Seconds),Midday Mean Travel Time (Seconds),Evening Mean Travel Time (Seconds),Early Morning Mean Travel Time (Seconds)
+03/30/2017,Thursday,201,222,447,291,417,201
+03/31/2017,Friday,295,228,333,309,267,200
+04/01/2017,Saturday,194,193,252,234,241,192
+04/02/2017,Sunday,272,202,301,249,303,200
+04/03/2017,Monday,400,220,492,295,524,204
+04/04/2017,Tuesday,206,250,354,307,339,208
+04/05/2017,Wednesday,196,249,387,276,339,192
+04/06/2017,Thursday,344,246,446,320,333,190
+04/07/2017,Friday,305,191,434,277,260,198
+04/08/2017,Saturday,189,173,253,230,231,192
+04/09/2017,Sunday,274,202,305,249,303,194
+04/10/2017,Monday,273,228,343,244,289,198
+04/11/2017,Tuesday,301,246,347,282,301,203
+04/12/2017,Wednesday,257,245,256,267,234,194
+04/13/2017,Thursday,183,212,202,202,232,186
+04/14/2017,Friday,207,180,217,201,218,178
+04/15/2017,Saturday,198,176,247,221,253,202
+04/16/2017,Sunday,272,194,294,247,301,214
+04/17/2017,Monday,199,196,323,265,328,200
+04/18/2017,Tuesday,192,203,356,357,465,191
+04/19/2017,Wednesday,218,262,349,251,465,212
+04/20/2017,Thursday,220,303,333,297,404,221
+04/21/2017,Friday,199,282,472,319,396,199
+04/22/2017,Saturday,229,180,240,229,223,194
+04/23/2017,Sunday,279,255,318,249,308,213
+04/24/2017,Monday,185,179,413,344,324,186
+04/25/2017,Tuesday,402,228,384,360,538,203
+04/26/2017,Wednesday,404,215,553,350,408,209
+04/27/2017,Thursday,197,190,242,254,236,198
+04/28/2017,Friday,194,237,292,231,269,195
+04/29/2017,Saturday,204,187,223,202,224,207
+04/30/2017,Sunday,213,174,222,210,224,183
+05/01/2017,Monday,332,227,344,259,515,190
+05/02/2017,Tuesday,209,249,318,258,308,211
+05/03/2017,Wednesday,195,263,384,273,382,193
+05/04/2017,Thursday,340,190,420,281,386,193
+05/05/2017,Friday,267,207,313,267,258,200
+05/06/2017,Saturday,181,186,232,218,274,183
+05/07/2017,Sunday,261,230,282,243,290,199
+05/08/2017,Monday,315,274,338,267,402,190
+05/09/2017,Tuesday,213,226,333,281,287,214
+05/10/2017,Wednesday,193,236,290,252,295,193
+05/11/2017,Thursday,330,234,347,284,393,187
+05/12/2017,Friday,209,227,302,267,282,209
+05/13/2017,Saturday,185,238,245,242,279,185
+05/14/2017,Sunday,195,256,356,247,309,187
+05/15/2017,Monday,298,245,316,276,337,200
+05/16/2017,Tuesday,327,186,359,265,441,179
+05/17/2017,Wednesday,268,225,323,248,261,186
+05/18/2017,Thursday,351,274,513,277,360,198
+05/19/2017,Friday,279,190,307,273,295,201
+05/20/2017,Saturday,193,180,246,222,254,196
+05/21/2017,Sunday,259,206,310,243,251,194
+05/22/2017,Monday,193,221,385,238,363,191
+05/23/2017,Tuesday,197,210,371,306,326,195
+05/24/2017,Wednesday,189,210,414,272,300,186
+05/25/2017,Thursday,384,221,524,267,537,192
+05/26/2017,Friday,192,206,341,289,271,190
+05/27/2017,Saturday,223,183,237,217,233,187
+05/28/2017,Sunday,266,213,310,242,283,193
+05/29/2017,Monday,310,215,427,258,310,188
+05/30/2017,Tuesday,304,212,373,254,346,180
+05/31/2017,Wednesday,330,280,417,300,321,197
+06/01/2017,Thursday,305,396,361,281,266,274
+06/02/2017,Friday,195,199,297,269,224,195
+06/03/2017,Saturday,225,209,252,208,244,195
+06/04/2017,Sunday,253,228,326,230,238,193
+06/05/2017,Monday,255,214,255,229,304,195
+06/06/2017,Tuesday,275,193,324,217,341,176
+06/07/2017,Wednesday,187,202,317,231,275,185
+06/08/2017,Thursday,194,235,414,263,265,193
+06/09/2017,Friday,234,214,248,235,221,200
+06/10/2017,Saturday,183,177,212,223,235,184
+06/11/2017,Sunday,204,191,204,196,222,187
+06/12/2017,Monday,254,187,292,217,293,182
+06/13/2017,Tuesday,272,310,270,229,333,200
+06/14/2017,Wednesday,187,195,513,235,507,185
+06/15/2017,Thursday,368,263,542,289,421,189
+06/16/2017,Friday,196,172,274,239,242,200
+06/17/2017,Saturday,186,175,220,204,225,189
+06/18/2017,Sunday,182,181,405,226,400,182
+06/19/2017,Monday,272,242,336,240,283,196
+06/20/2017,Tuesday,214,243,334,267,330,211
+06/21/2017,Wednesday,189,226,560,247,388,182
+06/22/2017,Thursday,321,238,353,268,436,205
+06/23/2017,Friday,200,198,407,233,259,201
+06/24/2017,Saturday,210,185,209,200,246,187
+06/25/2017,Sunday,202,177,204,196,221,178
+06/26/2017,Monday,196,206,379,234,330,187
+06/27/2017,Tuesday,288,189,317,256,338,180
+06/28/2017,Wednesday,271,252,308,232,306,189
+06/29/2017,Thursday,392,228,582,272,549,186
